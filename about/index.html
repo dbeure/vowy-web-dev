@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn what Vowy is and how it helps couples plan weddings together.">
+  <title>About Vowy</title>
+  <link rel="icon" type="image/png" href="/favicon.png?v=20260329">
+  <style>
+    :root {
+      --bg: #f7f3ee;
+      --surface: #fffaf6;
+      --surface-strong: #ffffff;
+      --text: #2f2f33;
+      --muted: #6b6a70;
+      --accent: #d8a7b1;
+      --accent-deep: #b87f8c;
+      --line: rgba(47, 47, 51, 0.1);
+      --shadow: 0 20px 45px rgba(68, 52, 58, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(216, 167, 177, 0.28), transparent 30%),
+        linear-gradient(180deg, #fbf8f4 0%, var(--bg) 100%);
+    }
+
+    .shell {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .brand {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .links a,
+    .back-link {
+      color: var(--accent-deep);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hero,
+    .section {
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero {
+      padding: 40px;
+      margin-bottom: 24px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(216, 167, 177, 0.2);
+      color: var(--accent-deep);
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-family: Arial, sans-serif;
+    }
+
+    h1,
+    h2 {
+      margin: 0 0 16px;
+      line-height: 1.05;
+      font-weight: 600;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 8vw, 4.5rem);
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    p,
+    li {
+      font-size: 1.06rem;
+      line-height: 1.8;
+      color: var(--muted);
+    }
+
+    .lede {
+      font-size: 1.2rem;
+      max-width: 42rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .section {
+      padding: 28px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    footer {
+      margin-top: 28px;
+      text-align: center;
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 720px) {
+      .hero,
+      .section {
+        padding: 24px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <nav class="nav" aria-label="Top navigation">
+      <a class="brand" href="/">Vowy</a>
+      <div class="links">
+        <a href="/contact/">Contact</a>
+        <a href="/terms-and-conditions/">Terms &amp; Conditions</a>
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/">Open the app</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="eyebrow">About Vowy</div>
+      <h1>Wedding planning without the spreadsheet sprawl.</h1>
+      <p class="lede">
+        Vowy is a collaborative wedding planning workspace built to help couples keep projects,
+        vendors, tasks, and timelines in one place. It combines a visual board, structured planning,
+        and shared access so the work stays clear instead of chaotic.
+      </p>
+    </section>
+
+    <section class="grid" aria-label="About details">
+      <article class="section">
+        <h2>What Vowy does</h2>
+        <ul>
+          <li>Organizes wedding work into clear boards and lists.</li>
+          <li>Lets couples and collaborators coordinate in one shared project.</li>
+          <li>Tracks tasks, planning stages, and project details without switching tools.</li>
+          <li>Helps reduce duplicate work, missed steps, and scattered conversations.</li>
+        </ul>
+      </article>
+
+      <article class="section">
+        <h2>Who it is for</h2>
+        <p>
+          Vowy is designed for engaged couples and anyone helping them plan, including family,
+          wedding planners, and collaborators who need a simple place to stay aligned.
+        </p>
+        <p>
+          The product focuses on practical coordination first: fewer tabs, clearer ownership,
+          and a better sense of what needs to happen next.
+        </p>
+      </article>
+
+      <article class="section">
+        <h2>How it works</h2>
+        <p>
+          Users create a project, break work into categories and tasks, and collaborate inside the
+          same planning space. Depending on the account plan, teams can unlock additional
+          collaboration features and shared editing capabilities.
+        </p>
+      </article>
+
+      <article class="section">
+        <h2>Who am I</h2>
+        <p>
+          Hi, I&apos;m Debora. I got the idea for Vowy after seeing friends struggle to organize their
+          weddings across too many messages, notes, and spreadsheets. I wanted to build something
+          that could make the process feel more organized, less stressful, and a lot easier to share.
+        </p>
+        <p>
+          Vowy is a brand new product, and it&apos;s a one-person job from end to end. I&apos;m still
+          improving it constantly, and I genuinely hope it becomes useful for the people who try it.
+        </p>
+        <p>
+          If you like it, that&apos;s great. If you don&apos;t, or if something feels missing, I&apos;m very open
+          to feedback. The goal is to keep making Vowy better over time.
+        </p>
+      </article>
+
+      <article class="section">
+        <h2>Questions</h2>
+        <p>
+          For questions about the app, billing, or account access, use the support contact method
+          provided inside the product or through the Vowy team channels associated with your account.
+        </p>
+        <p>
+          You can also use the
+          <a class="back-link" href="/contact/">Contact page</a>
+          to send a message directly.
+        </p>
+        <p>
+          For the legal terms that govern use of the service, see the
+          <a class="back-link" href="/terms-and-conditions/">Terms &amp; Conditions page</a>.
+        </p>
+        <p>
+          For details about how personal data is handled, see the
+          <a class="back-link" href="/privacy-policy/">Privacy Policy</a>.
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      Last updated: 6 April 2026
+    </footer>
+  </main>
+</body>
+</html>
